@@ -14,19 +14,24 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 135px;
+    height: 105px;
+    width: 100%;
     background-color: rgb(3, 3, 31);
-    position: -webkit-sticky;
+    position: fixed;
+    top: -20px;
+    z-index: 2;
+
 }
 
 nav ul {
     display: flex;
     justify-content: center;
+    padding-top: 25px;
 }
 
 nav ul li {
     list-style: none;
-    margin: 0 23px;
+    margin: 3px 50px;
 }
 
 nav ul li a {
@@ -35,14 +40,25 @@ nav ul li a {
 
     &:hover {
         color: rgba(255, 255, 0, 0.747);
-        font-size: 1.1rem;
-    }
+}
 }
 
 .left {
     font-size: 1.5rem;
 }
-.btn{
+
+.leftsection {
+    width: 40%;
+    padding-left: 7%;
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+.rightsection {
+    margin-top: 28px;
+}
+
+.btn {
     padding: 12px;
     background-color: #392178;
     color: white;
@@ -81,7 +97,7 @@ nav ul li a {
 }
 
 .second .box {
-    background-color: white;
+    background-color: red;
     width: 70vw;
     height: 2px;
     margin: 96px 81px;
@@ -90,7 +106,7 @@ nav ul li a {
 
 .second .vertical {
     height: 98px;
-    background: white;
+    background: red;
     width: 1px;
     margin: 0px 171px;
 }
@@ -110,6 +126,7 @@ nav ul li a {
     position: relative;
     width: 250px;
     font-weight: bold;
+    color: red;
 }
 
 main hr {
@@ -175,10 +192,14 @@ hr {
 
 .third h1 {
     text-align: center;
+    color: black;
+    font-size: 40px;
 }
 
 .third h3 {
     margin: -2px;
+    color: black;
+    font-size: 18px;
 }
 
 .skills {
@@ -266,7 +287,7 @@ hr {
 }
 
 .django {
-    width: 70%;
+    width: 40%;
     animation: django 6s;
 }
 
@@ -336,7 +357,7 @@ hr {
     }
 
     100% {
-        width: 70%;
+        width: 40%;
     }
 }
 
@@ -362,7 +383,7 @@ hr {
 
 .fourth .vertical2 {
     height: 98px;
-    background: white;
+    background: red;
     width: 1px;
     margin: 0px 171px;
 }
@@ -376,7 +397,7 @@ hr {
 }
 
 .fourth .box {
-    background-color: white;
+    background-color: red;
     width: 45vw;
     height: 2px;
     margin: 85px 196px;
@@ -391,6 +412,7 @@ hr {
 
 div.vertical-title2 {
     font-size: 1.2rem;
+    color: red;
     font-weight: bold;
     position: relative;
     right: -75px;
@@ -398,9 +420,10 @@ div.vertical-title2 {
 
 div.vertical-text2 {
     font-size: 11px;
+
     color: rgb(117, 109, 109);
     width: 300px;
-    padding: 23px 0;
+    padding: 10px 0;
     position: relative;
     right: -40px;
 }
@@ -413,6 +436,7 @@ footer {
     background-color: rgb(3, 3, 31);
     height: 450px;
     position: sticky;
+    width: 100%;
 }
 
 .flex {
@@ -423,14 +447,15 @@ footer {
     margin-top: 59px;
     /* margin-bottom: 0px; */
     margin-left: 110px;
-    padding-right: 50px;
+    padding-right: -15px;
     cursor: pointer;
+    color: white;
 
     /* border-style: solid;
     border-color: white; */
-    &:hover {
+    /* &:hover {
         font-size: 12px;
-    }
+    } */
 }
 
 .flex .one {
@@ -438,6 +463,9 @@ footer {
     /* box-sizing: border-box;
     border-color: goldenrod;
     border-style: solid; */
+}
+.flex .two{
+    margin: 40px;
 }
 
 .flex .three {
@@ -458,6 +486,108 @@ footer {
 }
 
 .flex .six {
-margin: 165px 60px 50px 60px;
+    margin: 165px 60px 50px 60px;
 
 }
+
+.dropdown-toggle {
+    white-space: nowrap;
+    margin: -8px 0;
+    margin-right: 18px;
+    margin-left: 19px;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+
+    /* Adjust as needed */
+}
+
+.dropdown {
+    background-color: #03031f;
+}
+
+                        /* CONTACT PAGE CSS STARTS FROM HERE  */
+
+                        .contact{
+                            min-height: 100vh;
+                            background-color: #e8f0fe;
+                            padding: 50px;
+                            text-align: center;
+                        }
+                        .container{
+                            max-width: 800px;
+                            margin: 0 auto;
+                            
+                        }
+                        .container h2{
+                            font-size: 36px;
+                            margin-bottom: 40px;
+                            color: #333;
+                        }
+                        .contact-wrapper{
+                            display: grid;
+                            grid-template-columns: repeat(2 , 1fr);
+                            grid-gap: 30px;
+
+
+                        }
+                        .contact-form{
+                            text-align: left;
+                        }
+                        .contact-form h3{
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                            color: #333;
+
+                        }
+                        .form-group{
+                            margin-bottom: 20px;
+
+                        }
+                        input, textarea{
+                            width: 100%;
+                            padding: 12px;
+                            border-radius: 8px;
+                            border: none;
+                            background-color: #f8f9fa;
+                            color: #333;
+
+                        }
+                        input:focus,
+                        textarea:focus{
+                                outline: none;
+                                box-shadow: 0 0 8px #bbb;
+                        }
+                        button{
+                            display: inline-block;
+                            padding: 12px 24px;
+                            background-color: #4caf50;
+                            border: none;
+                            cursor: pointer;
+                            transition: 0.4s ease;
+                            &:hover{
+                                background-color: #45a049;
+                            }
+                        }
+                        .contact-info{
+                            text-align: left;
+
+                        }
+                        .contact-info h3{
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                            color: #333;
+                        }
+                        .contact-info p{
+                            margin-bottom: 10px;
+                            color: #555;
+                        }
+                        .contact-info i{
+                            color: #4caf50;
+                            margin-right: 10px;
+                        }
+                       

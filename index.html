@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -11,50 +11,63 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left"><img src="images/Sarfaraz’s Portfolio (8).png" style="width: 145px;" alt=""></div>
+            <a  href="index.html" class="left"><img src="images/sarfaraz_portfolio-removebg-preview.png"
+                 style=" cursor: pointer;   width: 225px;position: relative;top: 11px;" alt=""></a>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</>
-                    </li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <div class="dropdown">
+                        <button
+                            style="cursor: pointer; margin-top: -4px; padding-top: 2px;background-color: #03031f;   border-color: #03031f;"
+                            class="btn btn-secondary dropdown-toggle" type="button" aria-expanded="false">
+                            About
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#top">Education</a></li>
+                            <li><a class="dropdown-item" href="">Skills</a></li>
+                            <li><a class="dropdown-item" href="end">Experience</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="">Projects</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <main>
-        <section class="first">
+        <section class="first" id="#Home">
             <div class="leftsection">
                 Hi, My name is <br><span class="colour">Mohammed Sarfaraz</span>
                 <div> and I am a passionate</div>
                 <div><span id="element"></span></div>
                 <a href="https://docs.google.com/document/d/1ifbmsc3LkT45EI28edJw8Qq6oyq1ut3e/edit?usp=drive_link&ouid=111485981387131462861&rtpof=true&sd=true"
-                    target="_blank" rel="noopener noreferrer"><button class="btn">Download Resume</button></a>
+                    target="_blank" rel="noopener noreferrer"><button class="btn"
+                        style="background-color: #27aae1;">Download Resume</button></a>
 
             </div>
             <div class="rightsection">
-                <img src="images/programmers.png" alt="">
+                <img src="images/programmers.png" style="width: 80%;
+    margin: 50px 0;" alt="">
             </div>
         </section>
         <hr>
         <section class="second">
             <span class="gray">What i have done so far</span>
             <h1>Education</h1> <img src="images/books.png"
-                style="width: 40px;position: absolute;top: 757px;left: 338px;">
-
+                style="width: 40px;position: absolute;    top: 745px;  left: 319px;">
             <div class="box">
                 <div class="vertical">
                     <img src="images/school-clipart-transparent-background-5.png" style="    width: 55px;
                     position: absolute;
-                    top: 820px;
+                    top: 800px;
                     left: 366px;" alt="">
                     <div class="vertical-title">
                         All Saints Hight School <br>(2018-2022)
@@ -69,7 +82,7 @@
                 <div class="vertical">
                     <img src="images/inter.png" style="width: 82px;
                     position: absolute;
-                    top: 825px;
+                    top: 800px;
                     left: 698px;" alt="">
                     <div class="vertical-title">
                         Shaheen Junior College <br> (2022-2024)
@@ -84,7 +97,7 @@
                 <div class="vertical">
                     <img src="images/engineering.png" style="width: 95px;
                     position: absolute;
-                    top: 819px;
+                    top: 800px;
                     left: 1029px;;" alt="">
                     <div class="vertical-title">
                         ISL College Of Engineering <br> (2024-2028)
@@ -135,7 +148,7 @@
                 </li>
                 <li>
                     <h3>django</h3>
-                    <span class="bar"><span class="python"></span></span>
+                    <span class="bar"><span class="django"></span></span>
                 </li>
             </div>
         </section>
@@ -148,7 +161,7 @@
             <h1>Work Experience</h1> <img src="images/work experience.png" style="width: 38px;
         position: relative;
         top: -41px;
-        right: -275px; " alt="">
+        right: -245px; " alt="">
             <div class="box">
                 <div class="vertical2">
                     <img src="images/codsoft.png" style="width: 190px; position: relative; top: -57px;left: -99px;"
@@ -165,8 +178,8 @@
                     interactive and engaging, with hands-on projects and collaborative sessions that enhanced my
                     learning. <br>
 
-                    <span style="font-size: 20px; font-weight:bold;color:white ;    position: relative;
-    bottom: 25px;">Learned:</span>
+                    <span style="font-size: 20px; font-weight:bold;color:red ;    position: relative;
+    bottom:  5px;">Learned:</span>
                     <img src="images/html5-icon-png-1.jpg" style="width: 170px;" alt="">
                 </div>
             </div>
@@ -176,14 +189,14 @@
     <footer>
         <div class="flex">
             <div class="one">
-                <img src="images/Sarfaraz’s Portfolio (8).png" style="width: 380px;" alt="">
+                <img src="images/sarfaraz_portfolio-removebg-preview.png" style="width: 420px; height: auto;" alt="">
             </div>
             <div class="two">
-                <ul style="margin-left: 29px;">
-                    <li>HOME</li>
-                    <li>ABOUT ME</li>
-                    <li>SERVICES</li>
-                    <li>CONTACT</li>
+                <ul style="margin-left: 29px; margin-right: -150px;">
+                    <a  style="text-decoration: none;" href="index.html"> <li>HOME</li></a>
+                    <a  style="text-decoration: none;" href=""> <li>ABOUT</li></a>
+                    <a  style="text-decoration: none;" href="contact.html"> <li>CONTACT</li></a>
+                    <a  style="text-decoration: none;" href=""> <li>SERVICES</li></a>
                 </ul>
             </div>
             <div class="three">
@@ -203,22 +216,20 @@
                         style="font-size:48px;color:red"></i></a>
             </div>
         </div>
-
-
-
-
-
-
     </footer>
+
+
+
     <link rel="stylesheet" href="script.js">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web developer..'],
-            typeSpeed: 110,
-        });
-    </script>
+    <script>var typed = new Typed('#element', { strings: ['Web developer....'], typeSpeed: 110, });</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
