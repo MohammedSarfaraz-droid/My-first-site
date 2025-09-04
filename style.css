@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(9, 9, 72);
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 135px;
+    background-color: rgb(3, 3, 31);
+    position: -webkit-sticky;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        color: rgba(255, 255, 0, 0.747);
+        font-size: 1.1rem;
+    }
+}
+
+.left {
+    font-size: 1.5rem;
+}
+.btn{
+    padding: 12px;
+    background-color: #392178;
+    color: white;
+    border: 2px solid;
+    border-bottom-color: red;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.second {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.gray {
+    padding-left: 28px;
+    color: gray;
+}
+
+.second h1 {
+    padding-left: 28px;
+    font-size: 1.9rem;
+}
+
+.second .img {
+    width: 23px;
+}
+
+.second .box {
+    background-color: white;
+    width: 70vw;
+    height: 2px;
+    margin: 96px 81px;
+    display: flex;
+}
+
+.second .vertical {
+    height: 98px;
+    background: white;
+    width: 1px;
+    margin: 0px 171px;
+}
+
+.vertical-text {
+    top: 110px;
+    right: 101px;
+    position: relative;
+    color: rgb(117, 109, 109);
+    width: 300px;
+    font-size: 11px;
+}
+
+.vertical-title {
+    top: 100px;
+    right: 66px;
+    position: relative;
+    width: 250px;
+    font-weight: bold;
+}
+
+main hr {
+    border: 0;
+    background: red;
+    height: 2px;
+    margin: 20px 105px;
+}
+
+/* .first>div {
+    width: 40%;
+    margin: 70px 0;
+    margin-left: 10%;
+
+} */
+
+
+.leftsection {
+    width: 40%;
+    padding-left: 7%;
+    font-size: 2.5rem;
+}
+
+.rightsection {
+    width: 40%;
+}
+
+.rightsection img {
+    width: 80%;
+    /* margin: 50px 0; */
+
+}
+
+.colour {
+    /**
+ * Sets the color property to a specific RGB value.
+ * 
+ * The color is defined using the RGB color model with the following values:
+ * - Red: 143
+ * - Green: 75
+ * - Blue: 207
+ */
+    color: rgb(143, 75, 207);
+}
+
+#element {
+    color: red
+}
+
+hr {
+    border: 0;
+    background: red;
+    height: 2px;
+    margin: 90px 105px;
+}
+
+/* SKILLS CATEGORY CSS STARTS FROM HERE */
+
+.third {
+    /* background-color: #333; */
+    text-transform: uppercase;
+}
+
+.third h1 {
+    text-align: center;
+}
+
+.third h3 {
+    margin: -2px;
+}
+
+.skills {
+    width: 1000px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+
+    /**
+ * Adds a box shadow effect to an element.
+ * The shadow consists of two layers:
+ * - The first layer has an offset of 0px on the x-axis, 14px on the y-axis, a blur radius of 28px, and a color with 25% opacity.
+ * - The second layer has an offset of 0px on the x-axis, 10px on the y-axis, a blur radius of 10px, and a color with 22% opacity.
+ */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.skills li {
+    margin: 8px 0;
+    padding: 1px;
+}
+
+.bar {
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    /* 
+ * Applies a transition effect to all properties of the element.
+ * The transition lasts 0.3 seconds and follows a cubic-bezier timing function.
+ * The cubic-bezier function is defined by the control points (.25, .8, .25, 1).
+ */
+    transition: all 0.1s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bar:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 15px 15px rgba(0, 0, 0, 0.22);
+    transform: scale(1.05);
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    /* 
+ * Applies a linear gradient background to an element.
+ * The gradient starts at a 135-degree angle.
+ * The gradient transitions from a pink color (rgba(236, 0, 140, 1)) at 0% 
+ * to a light red color (rgba(252, 103, 103, 1)) at 100%.
+ */
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1) 0%, rgba(252, 103, 103, 1) 100%);
+}
+
+.html {
+    width: 95%;
+    animation: html 6s;
+}
+
+.css {
+    width: 75%;
+    animation: css 6s;
+}
+
+.javascript {
+    width: 55%;
+    animation: javascript 6s;
+}
+
+.bootstrap {
+    width: 75%;
+    animation: bootstrap 6s;
+}
+
+.mysql {
+    width: 82%;
+    animation: mysql 6s;
+}
+
+.python {
+    width: 80%;
+    animation: python 6s;
+}
+
+.django {
+    width: 70%;
+    animation: django 6s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes bootstrap {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes mysql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 82%;
+    }
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes django {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+
+
+/* WORK EXPERIENCE CSS STARTS FROM HERE  */
+.fourth {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+
+.grey {
+    color: gray;
+}
+
+.fourth {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.fourth .vertical2 {
+    height: 98px;
+    background: white;
+    width: 1px;
+    margin: 0px 171px;
+}
+
+.fourth h1 {
+    font-size: 1.9rem;
+}
+
+.fourth hr {
+    height: 1px;
+}
+
+.fourth .box {
+    background-color: white;
+    width: 45vw;
+    height: 2px;
+    margin: 85px 196px;
+}
+
+.fourth .details {
+    height: 33px;
+    background: white;
+    width: 1px;
+    margin: 0px 171px;
+}
+
+div.vertical-title2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    right: -75px;
+}
+
+div.vertical-text2 {
+    font-size: 11px;
+    color: rgb(117, 109, 109);
+    width: 300px;
+    padding: 23px 0;
+    position: relative;
+    right: -40px;
+}
+
+
+/* FOOTER CSS STARTS FROM HERE  */
+
+
+footer {
+    background-color: rgb(3, 3, 31);
+    height: 450px;
+    position: sticky;
+}
+
+.flex {
+    display: flex;
+}
+
+.two ul li {
+    margin-top: 59px;
+    /* margin-bottom: 0px; */
+    margin-left: 110px;
+    padding-right: 50px;
+    cursor: pointer;
+
+    /* border-style: solid;
+    border-color: white; */
+    &:hover {
+        font-size: 12px;
+    }
+}
+
+.flex .one {
+    margin: 0px 0px 0 100px;
+    /* box-sizing: border-box;
+    border-color: goldenrod;
+    border-style: solid; */
+}
+
+.flex .three {
+    margin-top: 420px;
+    /* padding-right: 100px; */
+    /* padding-left: 300px;  */
+    /* margin-right: 300px; */
+    color: grey;
+    font-size: 10px;
+}
+
+.flex .four {
+    margin: 165px 60px 50px 60px;
+}
+
+.flex .five {
+    margin: 165px 60px 50px 60px;
+}
+
+.flex .six {
+margin: 165px 60px 50px 60px;
+
+}
